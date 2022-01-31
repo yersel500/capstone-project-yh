@@ -1,6 +1,6 @@
 @font-face {
   font-family: cocogoose;
-  src: url(./fonts/cocogoose-pro.ttf);
+  src: url(./fonts/cocogoose.otf);
 }
 
 @font-face {
@@ -16,4 +16,122 @@
 
 body {
   font-family: lato, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+}
+
+.list1 {
+  list-style-type: none;
+}
+
+/* main section */
+.program-description {
+  padding: 3.5rem 2rem;
+}
+
+.previous-title {
+  font-size: 22px;
+  color: #ec5242;
+}
+
+.main-title {
+  font-family: cocogoose, lato, sans-serif;
+  color: #ec5242;
+}
+
+.description1 {
+  border: 0.2rem solid rgb(215, 216, 215);
+  padding: 0.8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.dates {
+  font-family: cocogoose, lato, sans-serif;
+  font-size: 22px;
+}
+
+/* program section */
+
+.program-section {
+  padding: 2rem 2rem;
+  background-color: #272a31;
+  color: #fff;
+}
+
+.title2 {
+  text-align: center;
+}
+
+.card-program {
+  background-color: #3d4049;
+  margin-top: 1rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.coin {
+  color: #ec5242;
+}
+
+.button-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#cta {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  padding: 1.8rem;
+  background-color: #ec5242;
+}
+
+/* speaker section */
+.speakers {
+  padding: 2rem 2rem;
+}
+
+.featured-speakers {
+  text-align: center;
+}
+
+.card-speaker {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.photo {
+  flex: 1;
+}
+
+.des-speaker {
+  flex: 2;
+}
+
+.photo-speaker {
+  max-width: 100%;
+  height: auto;
+}
+
+.work-speaker {
+  color: #ec5242;
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.bio-speaker {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
 }
