@@ -21,15 +21,82 @@ body {
 /* Navbar styles */
 .navbar {
   display: flex;
+  padding: 1rem 2rem;
 }
 
 .list1 {
   list-style-type: none;
+  padding-left: 2rem;
+  padding-top: 4rem;
+}
+
+/* animate hamburger menu */
+.hamburger {
+  cursor: pointer;
+}
+
+.link1 {
+  text-decoration: none;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: left;
+}
+
+#logo-navbar {
+  display: none;
+}
+
+.line {
+  display: block;
+  background-color: #ec5242;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+}
+
+.hamburger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  transition: 0.7s;
+  background-color: #fff;
+}
+
+.hamburger.active .line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  transition: 0.7s;
+  background-color: #fff;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: flex-start;
+  gap: 20px;
+  transform: translateX(-100%);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #ec5242;
+  opacity: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+.menu.active {
+  transform: translateX(0);
+  transition: 0.7s ease-in-out;
 }
 
 /* main section */
 .program-description {
   padding: 3.5rem 2rem;
+  background-color: #f3f0f0;
 }
 
 .previous-title {
@@ -134,4 +201,311 @@ body {
 .bio-speaker {
   font-size: 0.9rem;
   margin-top: 0.5rem;
+}
+
+/* footer section */
+.the-footer {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-logo {
+  min-width: 10%;
+  height: auto;
+  flex: 1;
+}
+
+.des-footer {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.detail-footer {
+  margin-bottom: 0.2rem;
+}
+
+/* adapt about page */
+
+/* main section */
+
+.contact-us,
+.email {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 0.1rem;
+}
+
+/* mission section */
+
+.mission-section {
+  padding: 2rem 2rem;
+  text-align: center;
+  border-bottom: 0.2rem solid #e4e2e2;
+}
+
+.title-mission {
+  margin-bottom: 1rem;
+}
+
+.des-mission {
+  margin-bottom: 1rem;
+}
+
+.img-mission {
+  max-width: 100%;
+  height: auto;
+}
+
+/* past section */
+
+.past-section {
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.title-past {
+  margin-bottom: 1rem;
+}
+
+.des-past {
+  margin-bottom: 1rem;
+}
+
+.past-event1 {
+  background: url(./images/event1.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(236, 82, 66, 0.7);
+  padding: 6rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.past-event2 {
+  background: url(./images/event2.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(236, 82, 66, 0.7);
+  padding: 6rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.title-event {
+  color: #fff;
+}
+
+/* partner section */
+.partner-section {
+  padding: 2rem 2rem;
+  text-align: center;
+  background-color: #272a31;
+}
+
+.partner-section-home {
+  display: none;
+}
+
+.title-partner {
+  color: #fff;
+}
+
+.company1 {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.company2 {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem auto;
+  width: 70%;
+}
+
+.company-logo {
+  min-width: 10%;
+  height: auto;
+  flex: 1;
+}
+
+/* working in desktop version */
+
+@media only screen and (min-width: 768px) {
+  /* Home page */
+
+  /* navbar desktop */
+
+  .navbar {
+    padding: 1rem 4rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .list1 {
+    padding-left: 0rem;
+    padding-top: 0rem;
+  }
+
+  /* animate hamburger menu */
+
+  .hamburger {
+    display: none;
+  }
+
+  .link1 {
+    color: #272a31;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  #logo-navbar {
+    display: flex;
+  }
+
+  .main-logo {
+    max-width: 25%;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: flex-start;
+    gap: 20px;
+    transform: translateX(0);
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* main section */
+  .program-description {
+    padding: 4rem;
+  }
+
+  .previous-title {
+    font-size: 1.8rem;
+  }
+
+  .main-title {
+    font-size: 3rem;
+  }
+
+  .description1 {
+    border: 0.2rem solid rgb(215, 216, 215);
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .dates {
+    font-size: 1.7rem;
+  }
+
+  /* program section */
+
+  .program-section {
+    padding: 4rem;
+  }
+
+  .card-container {
+    width: 90%;
+    display: flex;
+    gap: 0.15rem;
+    margin: 4rem auto;
+  }
+
+  .card-program {
+    flex: 1;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #cta {
+    text-decoration: underline;
+    background-color: transparent;
+  }
+
+  /* speaker section */
+  .speakers {
+    padding: 4rem;
+  }
+
+  .card-speaker-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+
+  .card-speaker {
+    width: 45%;
+  }
+
+  /* partner section */
+  .partner-section-home {
+    display: block;
+  }
+  .company1 {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  /* About page */
+  /* main section */
+  .previous-title-about {
+    display: none;
+  }
+
+  .main-title-about {
+    width: 70%;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  /* mission section */
+  .mission-section {
+    padding: 4rem;
+  }
+
+  .des-mission-container {
+    width: 70%;
+    margin: 0.5rem auto;
+  }
+
+  /* past section */
+  .past-section {
+    padding: 4rem;
+  }
+
+  .past-event-container {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  .past-event-container2 {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .past-event {
+    flex: 1;
+  }
+
+  /* partner section */
+
+  .partner-section-about {
+    display: none;
+  }
+
+  /* footer */
+  .the-footer {
+    padding: 4rem;
+  }
+  .the-footer-about {
+    background-color: #272a31;
+    color: #fff;
+  }
 }
