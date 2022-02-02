@@ -6,7 +6,7 @@ Module 1 Microverse Capstone Project
 
 - html
 - css
-- jss
+- javascript
 - linters
 
 ## Live Demo

@@ -367,8 +367,8 @@ body {
   }
 
   .list1 {
-    padding-left: 0rem;
-    padding-top: 0rem;
+    padding-left: 0;
+    padding-top: 0;
   }
 
   /* animate hamburger menu */
@@ -463,6 +463,7 @@ body {
   .show-more {
     display: none;
   }
+
   .speakers {
     padding: 4rem;
   }
@@ -482,12 +483,14 @@ body {
   .partner-section-home {
     display: block;
   }
+
   .company1 {
     width: 80%;
     margin: 1rem auto;
   }
 
   /* About page */
+
   /* main section */
   .previous-title-about {
     display: none;
@@ -538,6 +541,7 @@ body {
   .the-footer {
     padding: 4rem;
   }
+
   .the-footer-about {
     background-color: #272a31;
     color: #fff;

@@ -12,27 +12,25 @@ document.querySelectorAll('.list1').forEach((n) => n.addEventListener('click', (
   navMenu.classList.remove('active');
 }));
 
-
-
 // Create speaker section dynamically
 
 const speaker = [
   {
-    imagen: "./images/speakers/james-preston.jpg",
+    imagen: './images/speakers/james-preston.jpg',
     alt: 'Speaker James Preston',
     speakerName: 'James Preston',
     workSpeaker: 'Globalcryto.tv Co-founder and comms manager at Zeitgeist',
     bioSpeaker: 'James is an accomplished tech writer and speaker and currently server.',
   },
   {
-    imagen: "./images/speakers/justin-Sun.jpg",
+    imagen: './images/speakers/justin-Sun.jpg',
     alt: 'Speaker Justin Sun',
     speakerName: 'Justin Sun',
     workSpeaker: 'Founder of Tron',
     bioSpeaker: 'Justin Sun is the Founder of TRON, one of the world’s largest.',
   },
   {
-    imagen: "./images/speakers/sandeep-nailwal.jpg",
+    imagen: './images/speakers/sandeep-nailwal.jpg',
     alt: 'Speaker Sandeep Nailwal',
     speakerName: 'Sandeep Nailwal',
     workSpeaker: 'Co-founder and Chief Operations Officer at Polygon',
@@ -62,9 +60,7 @@ const speaker = [
 
 ];
 
-
-
-for (let i=0; i<speaker.length; i++) {
+for (let i = 0; i < speaker.length; i += 1) {
   const cardSpeaker = document.createElement('div');
   cardSpeaker.classList.add('card-speaker', `card-speaker-${i}`);
   const photo = document.createElement('div');
@@ -76,10 +72,10 @@ for (let i=0; i<speaker.length; i++) {
   const desSpeaker = document.createElement('div');
   desSpeaker.classList.add('des-speaker');
   const speakerName = document.createElement('h4');
-  speakerName.classList.add('name-speaker')
+  speakerName.classList.add('name-speaker');
   speakerName.textContent = speaker[i].speakerName;
   const workSpeaker = document.createElement('p');
-  workSpeaker.classList.add('work-speaker')
+  workSpeaker.classList.add('work-speaker');
   workSpeaker.textContent = speaker[i].workSpeaker;
   const bioSpeaker = document.createElement('p');
   bioSpeaker.classList.add('bio-speaker');
@@ -95,12 +91,10 @@ for (let i=0; i<speaker.length; i++) {
   desSpeaker.appendChild(bioSpeaker);
 }
 
-
 const showMore = document.querySelector('.show-more');
 
-showMore.addEventListener('click', (e) => {
-  
-  for (let i=2; i<speaker.length; i++) {
+showMore.addEventListener('click', () => {
+  for (let i = 2; i < speaker.length; i += 1) {
     const cardSpeaker = document.querySelector(`.card-speaker-${i}`);
 
     if (cardSpeaker.classList.contains('active')) {
@@ -108,15 +102,5 @@ showMore.addEventListener('click', (e) => {
     } else {
       cardSpeaker.classList.add('active');
     }
-
-    
   }
-  
-})
-
-
-
-
-
-
-
+});
