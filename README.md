@@ -15,6 +15,8 @@ Module 1 Microverse Capstone Project
 
 ![image](https://image.prntscr.com/image/ydxJGxH3SNC520UtsK11gw.png)
 
+[Video of the project](https://www.loom.com/share/38c974bd76f948f693195491251ac9de)
+
 ## Getting Started
 
 - Add a .gitignore file.
