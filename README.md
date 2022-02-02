@@ -38,6 +38,7 @@ To get a local copy up and running follow these simple example steps.
 ## Acknowledgments
 
 - Microverse
+- Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07)
 
 ## 📝 License
 
