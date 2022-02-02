@@ -203,6 +203,29 @@ body {
   margin-top: 0.5rem;
 }
 
+.card-speaker-2,
+.card-speaker-3,
+.card-speaker-4,
+.card-speaker-5 {
+  display: none;
+}
+
+.card-speaker-2.active,
+.card-speaker-3.active,
+.card-speaker-4.active,
+.card-speaker-5.active {
+  display: flex;
+}
+
+.show-more {
+  background-color: #fff;
+  border: 0.1rem solid #9e9fa0;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
 /* footer section */
 .the-footer {
   display: flex;
@@ -429,6 +452,17 @@ body {
   }
 
   /* speaker section */
+
+  .card-speaker-2,
+  .card-speaker-3,
+  .card-speaker-4,
+  .card-speaker-5 {
+    display: flex;
+  }
+
+  .show-more {
+    display: none;
+  }
   .speakers {
     padding: 4rem;
   }
