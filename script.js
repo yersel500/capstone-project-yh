@@ -100,10 +100,10 @@ showMore.addEventListener('click', () => {
 
     if (cardSpeaker.classList.contains('active')) {
       cardSpeaker.classList.remove('active');
-      showMore.textContent = 'MORE'
+      showMore.textContent = 'MORE';
     } else {
       cardSpeaker.classList.add('active');
-      showMore.textContent = 'LESS'
+      showMore.textContent = 'LESS';
     }
   }
 });
