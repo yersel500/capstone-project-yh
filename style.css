@@ -18,6 +18,34 @@ body {
   font-family: lato, sans-serif;
 }
 
+/* Header styles */
+.the-header {
+  padding: 0.2rem 2rem;
+  background-color: #272a31;
+  display: none;
+}
+
+.header-list-container {
+  display: flex;
+  justify-content: end;
+  gap: 4px;
+}
+
+.main-header {
+  width: 12px;
+  height: auto;
+}
+
+.header-list {
+  list-style-type: none;
+}
+
+.link-header {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
+
 /* Navbar styles */
 .navbar {
   display: flex;
@@ -145,6 +173,11 @@ body {
   padding: 1.5rem;
 }
 
+.icon-coin {
+  min-width: 10%;
+  height: auto;
+}
+
 .coin {
   color: #ec5242;
 }
@@ -239,6 +272,12 @@ body {
   min-width: 10%;
   height: auto;
   flex: 1;
+}
+
+.link-home {
+  width: 100%;
+  height: auto;
+  display: none;
 }
 
 .des-footer {
@@ -358,12 +397,21 @@ body {
 @media only screen and (min-width: 768px) {
   /* Home page */
 
+  /* Header styles */
+  .the-header {
+    display: block;
+  }
+
   /* navbar desktop */
 
   .navbar {
     padding: 1rem 4rem;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .link-home {
+    display: block;
   }
 
   .list1 {
@@ -434,10 +482,14 @@ body {
   }
 
   .card-container {
-    width: 90%;
+    width: 95%;
     display: flex;
     gap: 0.15rem;
     margin: 4rem auto;
+  }
+
+  .des-coin {
+    font-size: 0.7rem;
   }
 
   .card-program {

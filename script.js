@@ -91,6 +91,7 @@ for (let i = 0; i < speaker.length; i += 1) {
   desSpeaker.appendChild(bioSpeaker);
 }
 
+// Show more button
 const showMore = document.querySelector('.show-more');
 
 showMore.addEventListener('click', () => {
@@ -99,8 +100,10 @@ showMore.addEventListener('click', () => {
 
     if (cardSpeaker.classList.contains('active')) {
       cardSpeaker.classList.remove('active');
+      showMore.textContent = 'MORE'
     } else {
       cardSpeaker.classList.add('active');
+      showMore.textContent = 'LESS'
     }
   }
 });
